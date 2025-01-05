@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte padrinos</title>
+    <link rel="stylesheet" href="reportStyles.css">
+</head>
+<body class="reportColor">
+<div class="tituloTabla">
+<h1>Reporte de Padrinos</h1>
+<input type="text" id="searchInput" placeholder="Buscar..." oninput="filterResults()">
+</div>
+<div class="formContainer">
+  <div class="idField">
+   <label for="idNumber">ID </label>
+   <input type="text" id="idNumber">
+  </div>
+  <div class="nameField">
+   <label for="name">Nombre </label>
+   <input type="text" id="name" placeholder="Escriba un correo">
+  </div>
+  <div class="gcField">
+   <label for="gc">Ahijado </label>
+   <input type="text" id="gc" placeholder="Nombre del ahijado">
+  </div>
+  <div class="phoneField">
+    <label for="phone">Telefono </label>
+    <input type="text" id="phone" placeholder="Telefono del padrino">
+   </div>
+   <div class="bdField">
+    <label for="bd">Cumpleanos </label>
+    <input type="text" id="bd" placeholder="Cumpleanos del ahijado">
+   </div>
+</div>
+<div class="reportContainer">
+<div class="reportTable">
+ <table border="1">
+  <thead>
+    <tr>
+       <th>Id</th> 
+       <th>Nombre</th>  
+       <th>Cumpleaños</th>
+       <th>Ahijado</th>
+       <th>Teléfono</th>
+       <th>Donación</th>
+       <th>Monto</th> 
+     </tr>    
+  </thead>  
+  <tbody>
+    <tr>
+      <th>1</th> 
+      <td>Carlos Caballero</td>
+      <td>01/27/1994</td>
+      <td>Zoe</td>
+      <td>6565937799</td>
+      <td>Realizada</td>\
+      <th>1000</th> 
+    </tr>
+  </tbody>  
+ </table>
+</div>
+</div>
+<div class="buttonsSet">
+<button style="background-color: rgb(130, 235, 130);">REALIZADA</button>
+<button style="background-color: rgb(136, 136, 204);">AGREGAR</button>
+<button style="background-color:rgb(247, 247, 118)">EDITAR</button>
+<button style="background-color: rgb(255, 73, 73);">ELIMINAR</button>
+</div>
+<footer>Encabezado</footer>
+<script src="script.js"></script>
+</body>
+</html>
