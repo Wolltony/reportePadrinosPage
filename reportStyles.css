@@ -9,17 +9,16 @@
     background-color: rgb(255, 255, 255); /* Fondo blanco con transparencia */
     color: #333;
     padding: 0;
-    margin: 0%;
-    border-radius: 10px;
+    margin: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: absolute;
     left:5%; 
     top:40%;
     height: 70%;
-    width: 80%;
+    width: 78%;
     max-height: 60%;
     overflow-y: auto; 
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
 }
 table {
     position:absolute;
@@ -28,14 +27,25 @@ table {
     top:3%;
     border-collapse: collapse;
 }
+thead {
+    position:sticky; 
+    background-color: bisque;
+    top: 0; 
+    z-index: 2;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
 th {
     position: sticky;
-    top: 0; /* Fija el encabezado en la parte superior */
-    background: #f0f0f0; /* Fondo del encabezado */
+    top: 0; 
     z-index: 1;
-  }
+    border: 1px solid #ccc;
+    padding: 10px;
+}
 td {
     text-align: start;
+    border: 1px solid #ccc;
+    padding: 10px;
 }
 .tituloTabla {
     display: grid;
@@ -50,17 +60,16 @@ td {
     border-bottom-right-radius: 10px;
     opacity: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 2;
+    z-index: 3;
     font-size: 150%;
 }
 #searchInput {
     grid-column: 2;
     position: relative;
     border-radius: 7px;
-    left: 41%;
+    left: 59%;
     top: 28%;
-    width: 45%;
-     
+    width: 20%;
 }
 h1 {
   display:flex;
@@ -78,15 +87,15 @@ h1 {
 .buttonsSet {
     position: absolute;
     top:40%;
-    left: 86%;
+    left: 84%;
     height: 18%;
     width: 15%;
 }
 button {
     display:flex;
     justify-content: center;
-    width: 80%;
-    height: 50%;
+    width: 70%;
+    height: 40%;
     margin: 15%;
     margin-bottom: 20%;
     margin-left: 0;
@@ -97,9 +106,9 @@ button {
     right: 50%;
     display: flex;
     align-items: end;
-    color:rgb(0, 0, 0);
     font-size: large;
     cursor: pointer;
+    border: none; 
 }
 footer {
     position: absolute;
@@ -113,7 +122,7 @@ footer {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     width: 90%; /* Ajusta el ancho para que esté más centrado */
     height: 26%;
     backdrop-filter: 34%;
@@ -123,6 +132,7 @@ footer {
 }
 label {
     margin-left: 10%; /* Añadir espacio a la izquierda para centrar los labels */
+    font-size: large;
 }
 input {
     width: 60%; /* Aumenta el tamaño de los inputs */
@@ -137,7 +147,11 @@ input {
     grid-row: 1;
 }
 #idNumber {
-    width: 6%;
+    width: 4%;
+    text-align: center;
+    background-color: rgb(100, 100, 247);
+    color: white;
+    font-weight: bold;
 }
 .nameField {
     grid-column: 1;
@@ -151,8 +165,30 @@ input {
     grid-column: 2;
     grid-row: 1;
 }
-.donateField { 
-    grid-column: 2;
+.montoField { 
+    grid-column: 3;
     grid-row: 2;
 }
+.cbDonateField {
+    display:flex;
+    align-items: center;
+    grid-column: 3;
+    grid-row: 1;
+    width: 60%;
+    height: 40%;
+}
+.btSearch {
+    position: absolute;
+    z-index: 3;
+    top: 12%;
+    right: 2%;
+    width: 8%;
+    height: 90%;
+    color: rgb(90, 90, 161);
+}
+tr.seleccionada {
+    background-color: lightblue;
+}
+
+
 
