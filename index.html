@@ -3,39 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="dogIcon3.png" type="image/png">
     <title>Reporte padrinos</title>
     <link rel="stylesheet" href="reportStyles.css">
 </head>
 <body class="reportColor">
 <div class="tituloTabla">
 <h1>Reporte de Padrinos</h1>
-<input type="text" id="searchInput" placeholder="Buscar..." oninput="filterResults()">
+<div class="searchContainer">
+  <input type="text" id="searchInput" placeholder="">
+  <div class="btSearch">
+    <button id="find" style="background-color: rgb(6, 6, 255); color: antiquewhite;">Buscar</button>
+  </div>
+</div>
 </div>
 <div class="formContainer">
   <div class="idField">
-   <label for="idNumber">ID </label>
+   <label for="idNumber">ID</label>
    <input type="text" id="idNumber">
   </div>
   <div class="nameField">
-   <label for="name">Nombre </label>
+   <label for="name">Nombre</label>
    <input type="text" id="name" placeholder="Escriba un correo">
   </div>
   <div class="gcField">
-   <label for="gc">Ahijado </label>
-   <input type="text" id="gc" placeholder="Nombre del ahijado">
+   <label for="gchild">Ahijado</label>
+   <input type="text" id="gchild" placeholder="Nombre del ahijado">
   </div>
   <div class="phoneField">
-    <label for="phone">Telefono </label>
-    <input type="text" id="phone" placeholder="Telefono del padrino">
+    <label for="phone">Teléfono</label>
+    <input type="text" id="phone" placeholder="Teléfono del padrino">
    </div>
-   <div class="bdField">
-    <label for="bd">Cumpleanos </label>
-    <input type="text" id="bd" placeholder="Cumpleanos del ahijado">
+   <div class="birthField">
+    <label for="birth">Cumpleaños</label>
+    <input type="text" id="birth" placeholder="Cumpleaños padrino">
    </div>
+   <div class="montoField">
+    <label for="monto">Cantidad</label>
+    <input type="text" id="monto" placeholder="">
+   </div>
+   <div class="cbDonateField">
+   <label for="cbDonate">Donación Estatus</label>
+    <select id="cbDonate">
+        <option value="Proceso">Proceso</option>
+        <option value="Realizada">Realizada</option>
+    </select>
+  </div>
 </div>
 <div class="reportContainer">
 <div class="reportTable">
- <table border="1">
+ <table id="reportTb" border="1">
   <thead>
     <tr>
        <th>Id</th> 
@@ -44,7 +61,7 @@
        <th>Ahijado</th>
        <th>Teléfono</th>
        <th>Donación</th>
-       <th>Monto</th> 
+       <th>Cantidad</th> 
      </tr>    
   </thead>  
   <tbody>
@@ -54,7 +71,124 @@
       <td>01/27/1994</td>
       <td>Zoe</td>
       <td>6565937799</td>
-      <td>Realizada</td>\
+      <td>Proceso</td>
+      <th>1000</th> 
+    </tr>
+    <tr>
+      <th>2</th> 
+      <td>Carlos Caballero</td>
+      <td>01/27/1994</td>
+      <td>Zoe</td>
+      <td>6565937799</td>
+      <td>Proceso</td>
+      <th>1000</th> 
+    </tr>
+    <tr>
+      <th>3</th> 
+      <td>Carlos Caballero</td>
+      <td>01/27/1994</td>
+      <td>Zoe</td>
+      <td>6565937799</td>
+      <td>Proceso</td>
+      <th>1000</th> 
+    </tr>
+    <tr>
+      <th>4</th> 
+      <td>Carlos Caballero</td>
+      <td>01/27/1994</td>
+      <td>Zoe</td>
+      <td>6565937799</td>
+      <td>Realizada</td>
+      <th>1000</th> 
+    </tr>
+    <tr>
+      <th>4</th> 
+      <td>Carlos Caballero</td>
+      <td>01/27/1994</td>
+      <td>Zoe</td>
+      <td>6565937799</td>
+      <td>Realizada</td>
+      <th>1000</th> 
+    </tr>
+    <tr>
+      <th>4</th> 
+      <td>Carlos Caballero</td>
+      <td>01/27/1994</td>
+      <td>Zoe</td>
+      <td>6565937799</td>
+      <td>Realizada</td>
+      <th>1000</th> 
+    </tr>
+    <tr>
+      <th>4</th> 
+      <td>Carlos Caballero</td>
+      <td>01/27/1994</td>
+      <td>Zoe</td>
+      <td>6565937799</td>
+      <td>Realizada</td>
+      <th>1000</th> 
+    </tr>
+    <tr>
+      <th>4</th> 
+      <td>Carlos Caballero</td>
+      <td>01/27/1994</td>
+      <td>Zoe</td>
+      <td>6565937799</td>
+      <td>Realizada</td>
+      <th>1000</th> 
+    </tr>
+    <tr>
+      <th>4</th> 
+      <td>Carlos Caballero</td>
+      <td>01/27/1994</td>
+      <td>Zoe</td>
+      <td>6565937799</td>
+      <td>Realizada</td>
+      <th>1000</th> 
+    </tr>
+    <tr>
+      <th>4</th> 
+      <td>Carlos Caballero</td>
+      <td>01/27/1994</td>
+      <td>Zoe</td>
+      <td>6565937799</td>
+      <td>Realizada</td>
+      <th>1000</th> 
+    </tr>
+    <tr>
+      <th>1</th> 
+      <td>Carlos Caballero</td>
+      <td>01/27/1994</td>
+      <td>Zoe</td>
+      <td>6565937799</td>
+      <td>Proceso</td>
+      <th>1000</th> 
+    </tr>
+    <tr>
+      <th>1</th> 
+      <td>Carlos Caballero</td>
+      <td>01/27/1994</td>
+      <td>Zoe</td>
+      <td>6565937799</td>
+      <td>Proceso</td>
+      <th>1000</th> 
+    </tr>
+    <tr>
+      <th>1</th> 
+      <td>Carlos Caballero</td>
+      <td>01/27/1994</td>
+      <td>Zoe</td>
+      <td>6565937799</td>
+      <td>Proceso</td>
+      <th>1000</th> 
+    </tr>
+    <tr>
+      <th>1</th> 
+      <td>Carlos Caballero</td>
+      <td>01/27/1994</td>
+      <td>Zoe</td>
+      <td>6565937799</td>
+      <td>Proceso</td>
       <th>1000</th> 
     </tr>
   </tbody>  
@@ -62,12 +196,12 @@
 </div>
 </div>
 <div class="buttonsSet">
-<button style="background-color: rgb(130, 235, 130);">REALIZADA</button>
-<button style="background-color: rgb(136, 136, 204);">AGREGAR</button>
-<button style="background-color:rgb(247, 247, 118)">EDITAR</button>
-<button style="background-color: rgb(255, 73, 73);">ELIMINAR</button>
+<button id= "btDone" style="background-color: rgb(130, 235, 130); font-size: larger;">REALIZADA</button>
+<button style="background-color: rgb(136, 136, 204); font-size: larger;">GUARDAR</button>
+<button style="background-color:rgb(247, 247, 118); font-size: larger;">EDITAR</button>
+<button style="background-color: rgb(255, 73, 73); font-size: larger;">ELIMINAR</button>
 </div>
-<footer>Encabezado</footer>
-<script src="script.js"></script>
+<footer>Version 1.0.0.0.0</footer>
+<script src="scriptReport.js"></script>
 </body>
 </html>
