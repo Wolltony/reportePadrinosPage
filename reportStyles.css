@@ -14,7 +14,7 @@
     position: absolute;
     left:5%; 
     top:50%;
-    height: 70%;
+    height: 90%;
     width: 78%;
     max-height: 60%;
     overflow-y: auto; 
@@ -26,6 +26,7 @@ table {
     right:2.7%;
     top:3%;
     border-collapse: collapse;
+    height: 100%;
 }
 thead {
     position:sticky; 
@@ -145,10 +146,9 @@ input {
 .idField {
     grid-column: 1;
     grid-row: 1;
-    width: 10%;
 }
 #idNumber {
-    width: 15%;
+    width: 7%;
     text-align: center;
     background-color: rgb(100, 100, 247);
     color: white;
@@ -190,5 +190,12 @@ input {
 tr.seleccionada {
     background-color: lightblue;
 }
+
+.footer {
+    position: absolute;
+    top: 115%;
+    height: 3%;
+}
+
 
 
