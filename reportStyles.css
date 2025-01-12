@@ -179,13 +179,13 @@ input {
     width: 80%;
     height: 40%;
 }
-#cbDonate {
+select {
     display:flex;
     align-items: center;
     grid-column: 3;
     grid-row: 1;
     width: 80%;
-    height: 80%;
+    height: 115%;
 }
 .btSearch {
     position: absolute;
