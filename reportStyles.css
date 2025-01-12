@@ -13,7 +13,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: absolute;
     left:5%; 
-    top:50%;
+    top:55%;
     height: 90%;
     width: 78%;
     max-height: 60%;
@@ -125,11 +125,12 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 90%; /* Ajusta el ancho para que esté más centrado */
-    height: 32%;
+    height: 35%;
     backdrop-filter: 34%;
     top: 14%;
     font-size: x-large;
     left: 5%; /* Mueve todo hacia el centro */
+    padding-top: 2%;
 }
 label {
     margin-left: 10%; /* Añadir espacio a la izquierda para centrar los labels */
