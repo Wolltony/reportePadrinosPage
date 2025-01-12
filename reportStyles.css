@@ -145,9 +145,10 @@ input {
 .idField {
     grid-column: 1;
     grid-row: 1;
+    width: 10%;
 }
 #idNumber {
-    width: 4%;
+    width: 15%;
     text-align: center;
     background-color: rgb(100, 100, 247);
     color: white;
@@ -180,7 +181,7 @@ input {
 .btSearch {
     position: absolute;
     z-index: 3;
-    top: 12%;
+    top: 19%;
     right: 1%;
     width: 8%;
     height: 90%;
