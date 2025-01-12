@@ -186,6 +186,7 @@ select {
     grid-row: 1;
     width: 80%;
     height: 115%;
+    color: black;
 }
 .btSearch {
     position: absolute;
