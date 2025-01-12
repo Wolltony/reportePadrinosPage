@@ -187,6 +187,7 @@ select {
     width: 80%;
     height: 115%;
     color: black;
+    font-size: large;
 }
 .btSearch {
     position: absolute;
