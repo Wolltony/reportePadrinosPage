@@ -175,8 +175,16 @@ input {
     align-items: center;
     grid-column: 3;
     grid-row: 1;
-    width: 60%;
+    width: 80%;
     height: 40%;
+}
+#cbDonate {
+    display:flex;
+    align-items: center;
+    grid-column: 3;
+    grid-row: 1;
+    width: 80%;
+    height: 80%;
 }
 .btSearch {
     position: absolute;
