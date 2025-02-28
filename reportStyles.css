@@ -171,6 +171,8 @@ input {
     grid-column: 3;
     grid-row: 2;
 }
+
+/*
 .cbDonateField {
     display:flex;
     align-items: center;
@@ -179,6 +181,11 @@ input {
     width: 80%;
     height: 40%;
 }
+*/
+
+
+
+/*
 select {
     display:flex;
     align-items: center;
@@ -189,6 +196,9 @@ select {
     color: black;
     font-size: large;
 }
+
+*/
+
 .btSearch {
     position: absolute;
     z-index: 3;
@@ -207,6 +217,43 @@ tr.seleccionada {
     top: 115%;
     height: 3%;
 }
+.brushKit {
+    position: absolute;
+    left: 90%;
+    bottom: 49%;
+}
+.btn-con-imagen {
+    width: 50px;                   /* Ancho del botón */
+    height: 50px;                  /* Alto del botón */
+    background-image: url('brushKit.png'); /* Imagen como fondo */
+    background-size: cover;        /* Ajusta el tamaño de la imagen */
+    background-position: center;   /* Centra la imagen */
+    background-repeat: no-repeat;  /* Evita que se repita */
+    border: 1px solid;                 /* Sin borde */
+    cursor: pointer;               /* Cambia el cursor al pasar */
+}
+.cbDonateField {
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 10%;  /* Igual que otros campos */
+    font-size: large;
+}
+
+.cbDonateField label {
+    font-size: large;
+    margin: 0; /* Espaciado entre el label y el select */
+}
+
+.cbDonateField select {
+    width: 69%;  /* Igual que los inputs */
+    height: 37%;
+    font-size: large;
+}
+
 
 
 
