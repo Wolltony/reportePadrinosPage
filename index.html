@@ -17,14 +17,14 @@
   </div>
 </div>
 </div>
-<div class="formContainer">
+<form class="formContainer">
   <div class="idField">
    <label for="idNumber">ID</label>
    <input type="text" id="idNumber">
   </div>
   <div class="nameField">
    <label for="name">Nombre</label>
-   <input type="text" id="name" placeholder="Escriba un correo">
+   <input type="text" id="name" placeholder="Nombre del padrino">
   </div>
   <div class="gcField">
    <label for="gchild">Ahijado</label>
@@ -40,15 +40,19 @@
    </div>
    <div class="montoField">
     <label for="monto">Cantidad</label>
-    <input type="text" id="monto" placeholder="">
+    <input style="text-align: right;" type="text" id="monto" placeholder="0.00">
    </div>
    <div class="cbDonateField">
-   <label for="cbDonate">Donación Estatus</label>
+    <label for="cbDonate">Donación</label>
     <select id="cbDonate">
-        <option value="Proceso">Proceso</option>
+        <option value="Pendiente">Pendiente</option>
         <option value="Realizada">Realizada</option>
     </select>
-  </div>
+ </div> 
+</form>
+<div class="brushKit">
+  <button id="btErase" class="btn-con-imagen"></button>
+  <label style="font-size: small; text-align: center; position: absolute; bottom: -7%; right: 16%;">Borrar</label>
 </div>
 <div class="reportContainer">
 <div class="reportTable">
@@ -66,142 +70,27 @@
   </thead>  
   <tbody>
     <tr>
-      <th>1</th> 
-      <td>Carlos Caballero</td>
-      <td>01/27/1994</td>
-      <td>Zoe</td>
+      <td>1</td>
+      <td>Carlos Francisco Caballero Gutiérrez</td>
+      <td>1994/01/28</td>
+      <td>Chad</td>
       <td>6565937799</td>
-      <td>Proceso</td>
-      <th>1000</th> 
-    </tr>
-    <tr>
-      <th>2</th> 
-      <td>Carlos Caballero</td>
-      <td>01/27/1994</td>
-      <td>Zoe</td>
-      <td>6565937799</td>
-      <td>Proceso</td>
-      <th>1000</th> 
-    </tr>
-    <tr>
-      <th>3</th> 
-      <td>Carlos Caballero</td>
-      <td>01/27/1994</td>
-      <td>Zoe</td>
-      <td>6565937799</td>
-      <td>Proceso</td>
-      <th>1000</th> 
-    </tr>
-    <tr>
-      <th>4</th> 
-      <td>Carlos Caballero</td>
-      <td>01/27/1994</td>
-      <td>Zoe</td>
-      <td>6565937799</td>
-      <td>Realizada</td>
-      <th>1000</th> 
-    </tr>
-    <tr>
-      <th>4</th> 
-      <td>Carlos Caballero</td>
-      <td>01/27/1994</td>
-      <td>Zoe</td>
-      <td>6565937799</td>
-      <td>Realizada</td>
-      <th>1000</th> 
-    </tr>
-    <tr>
-      <th>4</th> 
-      <td>Carlos Caballero</td>
-      <td>01/27/1994</td>
-      <td>Zoe</td>
-      <td>6565937799</td>
-      <td>Realizada</td>
-      <th>1000</th> 
-    </tr>
-    <tr>
-      <th>4</th> 
-      <td>Carlos Caballero</td>
-      <td>01/27/1994</td>
-      <td>Zoe</td>
-      <td>6565937799</td>
-      <td>Realizada</td>
-      <th>1000</th> 
-    </tr>
-    <tr>
-      <th>4</th> 
-      <td>Carlos Caballero</td>
-      <td>01/27/1994</td>
-      <td>Zoe</td>
-      <td>6565937799</td>
-      <td>Realizada</td>
-      <th>1000</th> 
-    </tr>
-    <tr>
-      <th>4</th> 
-      <td>Carlos Caballero</td>
-      <td>01/27/1994</td>
-      <td>Zoe</td>
-      <td>6565937799</td>
-      <td>Realizada</td>
-      <th>1000</th> 
-    </tr>
-    <tr>
-      <th>4</th> 
-      <td>Carlos Caballero</td>
-      <td>01/27/1994</td>
-      <td>Zoe</td>
-      <td>6565937799</td>
-      <td>Realizada</td>
-      <th>1000</th> 
-    </tr>
-    <tr>
-      <th>1</th> 
-      <td>Carlos Caballero</td>
-      <td>01/27/1994</td>
-      <td>Zoe</td>
-      <td>6565937799</td>
-      <td>Proceso</td>
-      <th>1000</th> 
-    </tr>
-    <tr>
-      <th>1</th> 
-      <td>Carlos Caballero</td>
-      <td>01/27/1994</td>
-      <td>Zoe</td>
-      <td>6565937799</td>
-      <td>Proceso</td>
-      <th>1000</th> 
-    </tr>
-    <tr>
-      <th>1</th> 
-      <td>Carlos Caballero</td>
-      <td>01/27/1994</td>
-      <td>Zoe</td>
-      <td>6565937799</td>
-      <td>Proceso</td>
-      <th>1000</th> 
-    </tr>
-    <tr>
-      <th>1</th> 
-      <td>Carlos Caballero</td>
-      <td>01/27/1994</td>
-      <td>Zoe</td>
-      <td>6565937799</td>
-      <td>Proceso</td>
-      <th>1000</th> 
+      <td>Pendiente</td>
+      <td>2000</td>
     </tr>
   </tbody>  
  </table>
 </div>
 </div>
 <div class="buttonsSet">
-<button id= "btDone" style="background-color: rgb(130, 235, 130); font-size: larger; color: black;">REALIZADA</button>
-<button style="background-color: rgb(136, 136, 204); font-size: larger; color: black;">GUARDAR</button>
-<button style="background-color:rgb(247, 247, 118); font-size: larger; color: black;">EDITAR</button>
-<button style="background-color: rgb(255, 73, 73); font-size: larger; color: black;">ELIMINAR</button>
+<button id= "btDone" style="background-color: rgb(130, 235, 130); font-size: larger; color:black;">REALIZADA</button>
+<button id= "btSave" style="background-color: rgb(136, 136, 204); font-size: larger; color:black;">GUARDAR</button>
+<button id="btEdit" style="background-color:rgb(247, 247, 118); font-size: larger; color:black;">EDITAR</button>
+<button id="btDel" onclick="deletePadrino(this)" style="background-color: rgb(255, 73, 73); font-size: larger; color:black;">ELIMINAR</button>
 </div>
-<div class="footer">Versión 1.0.0.0.0</div>
-<script src="script.js"></script>
+<div class="footer">
+<h3>Versión 1.0.0.0.0</h3>
+</div>
+<script src="scriptReport.js"></script>
 </body>
 </html>
